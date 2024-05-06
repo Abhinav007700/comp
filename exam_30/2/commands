@@ -1,0 +1,7 @@
+lex q1.l
+yacc -d yacc.y
+gcc lex.yy.c y.tab.c input.c -o q1
+./q1
+
+gcc lex.yy.c y.tab.c symbol.c -o q2
+./q2
